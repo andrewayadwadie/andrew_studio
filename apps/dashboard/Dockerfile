@@ -14,8 +14,8 @@ RUN dart pub global activate jaspr_cli
 COPY apps/dashboard/ .
 RUN dart pub get --offline
 
-# Build Jaspr client app (outputs to build/jaspr/)
-RUN dart pub global run jaspr_cli:jaspr build
+# Build Jaspr client app in release mode (uses dart2js, outputs to build/jaspr/)
+RUN dart pub global run jaspr_cli:jaspr build --release
 
 # Serve stage: nginx for static files
 FROM nginx:alpine
