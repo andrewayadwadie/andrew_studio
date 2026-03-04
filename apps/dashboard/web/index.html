@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Studio — Dashboard</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f0f0f; color: #e5e5e5; }
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --surface: #1a1a1a;
+      --surface2: #242424;
+      --border: #2a2a2a;
+      --text: #e5e5e5;
+      --text-muted: #888;
+      --danger: #ef4444;
+      --success: #22c55e;
+    }
+    body.light {
+      --surface: #ffffff;
+      --surface2: #f3f4f6;
+      --border: #e5e7eb;
+      --text: #111827;
+      --text-muted: #6b7280;
+      background: #f9fafb;
+      color: #111827;
+    }
+    #output { display: none; }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.dart.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="output"></div>
+</body>
+</html>

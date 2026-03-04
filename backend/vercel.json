@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.dart",
+      "use": "@vercel/community-builders/dart"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.dart"
+    }
+  ],
+  "env": {
+    "SUPABASE_URL": "@supabase_url",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase_service_role_key",
+    "SUPABASE_JWT_SECRET": "@supabase_jwt_secret",
+    "CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name",
+    "CLOUDINARY_API_KEY": "@cloudinary_api_key",
+    "CLOUDINARY_API_SECRET": "@cloudinary_api_secret",
+    "CLOUDINARY_UPLOAD_PRESET": "@cloudinary_upload_preset",
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "UNSPLASH_ACCESS_KEY": "@unsplash_access_key",
+    "UNSPLASH_SECRET_KEY": "@unsplash_secret_key"
+  }
+}

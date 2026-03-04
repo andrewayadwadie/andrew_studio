@@ -1,0 +1,39 @@
+# Dart/Flutter
+.dart_tool/
+.packages
+pubspec.lock
+build/
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Environment
+.env
+*.env.local
+*.env.production
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Melos
+.melos_tool/
+
+# Dart Frog
+.dart_frog/
+
+# Flutter
+/apps/mobile_app/.flutter-plugins
+/apps/mobile_app/.flutter-plugins-dependencies
+/apps/mobile_app/android/local.properties
+/apps/mobile_app/android/.gradle
+/apps/mobile_app/ios/Pods
+/apps/mobile_app/ios/.symlinks
+
+# Vercel
+.vercel

@@ -1,0 +1,39 @@
+name: andrew_studio
+
+packages:
+  - apps/*
+  - backend
+  - packages/*
+
+sdkPath: auto
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+
+scripts:
+  build_runner:
+    run: dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 1
+    description: Run build_runner in all packages that need it
+    packageFilters:
+      dependsOn: build_runner
+
+  analyze:
+    run: dart analyze .
+    exec:
+      concurrency: 5
+    description: Analyze all packages
+
+  format:
+    run: dart format .
+    exec:
+      concurrency: 5
+    description: Format all packages
+
+  test:
+    run: dart test
+    exec:
+      concurrency: 1
+    description: Run tests in all packages

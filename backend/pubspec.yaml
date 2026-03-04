@@ -1,0 +1,22 @@
+name: backend
+description: Andrew Studio - Dart Frog REST API
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  dart_frog: ^1.2.6
+  supabase: ^2.3.6
+  http: ^1.2.2
+  dart_jsonwebtoken: ^2.12.2
+  crypto: ^3.0.5
+  mime: ^2.0.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  build_runner: ^2.4.13
+  dart_frog_gen: ^2.1.0
+  mocktail: ^1.0.4
+  test: ^1.25.2

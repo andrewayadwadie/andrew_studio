@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter --version)",
+      "Bash(dart --version)",
+      "Bash(melos --version)",
+      "Bash(dart_frog --version)",
+      "Bash(jaspr --version)",
+      "Bash(dart pub global activate melos)",
+      "Bash(dart pub global activate dart_frog_cli)",
+      "Bash(dart pub global activate jaspr_cli)",
+      "Bash(dart_frog create backend)",
+      "Bash(dart pub info dart_frog)",
+      "Bash(dart pub outdated --json)",
+      "Bash(dart pub add dart_frog)",
+      "Bash(dart analyze lib/ routes/ main.dart)",
+      "Bash(dart analyze lib/)"
+    ]
+  }
+}
