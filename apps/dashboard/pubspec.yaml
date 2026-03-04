@@ -15,6 +15,7 @@ dependencies:
 dev_dependencies:
   jaspr_builder: ^0.22.0
   build_runner: ^2.4.13
+  build_web_compilers: ^4.0.0
   test: ^1.25.2
   jaspr_test: ^0.22.0
 
