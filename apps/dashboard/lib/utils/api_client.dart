@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiClient {
-  static const String _baseUrl = 'http://localhost:8080'; // dev; prod: your Vercel URL
+  static const String _baseUrl = 'https://andrewstudio-production.up.railway.app';
   String? _token;
 
   void setToken(String token) => _token = token;
