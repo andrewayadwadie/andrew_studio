@@ -4,7 +4,7 @@ version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   jaspr: ^0.22.0
@@ -19,4 +19,4 @@ dev_dependencies:
   jaspr_test: ^0.22.0
 
 jaspr:
-  mode: static
+  mode: client
