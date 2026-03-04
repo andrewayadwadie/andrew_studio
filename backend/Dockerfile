@@ -22,6 +22,9 @@ COPY backend/ .
 RUN dart pub global activate dart_frog_cli
 RUN dart pub global run dart_frog_cli:dart_frog build
 
+# Create output directory
+RUN mkdir -p bin
+
 # AOT compile the generated server
 RUN dart compile exe build/bin/server.dart -o bin/server
 
