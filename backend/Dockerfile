@@ -15,11 +15,15 @@ COPY backend/pubspec.* ./
 COPY backend/pubspec_overrides.yaml* ./
 RUN dart pub get
 
-# Copy backend source code and AOT compile it
+# Copy backend source code
 COPY backend/ .
-# Ensure packages are still up-to-date if anything has changed
-RUN dart pub get --offline
-RUN dart compile exe main.dart -o bin/server
+
+# Build Dart Frog app (generates build/bin/server.dart)
+RUN dart pub global activate dart_frog_cli
+RUN dart pub global run dart_frog_cli:dart_frog build
+
+# AOT compile the generated server
+RUN dart compile exe build/bin/server.dart -o bin/server
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
